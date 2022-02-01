@@ -1,0 +1,26 @@
+GET http://localhost:3000/customers
+###
+
+POST http://localhost:3000/customer
+Content-Type: application/json
+
+{
+    "id": 101,
+    "name": "Asad",
+    "phone": "01757110297",
+    "email": "test@gmil.com",
+    "address": "Jhikargachha, Jessore"
+}
+
+###
+
+PUT http://localhost:3000/customer/101
+Content-Type: application/json
+
+{
+    "email": "we@gmail.com"
+}
+
+###
+
+DELETE http://localhost:3000/customer/101
