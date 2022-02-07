@@ -13,6 +13,7 @@ connectDB();
 app.get('/', Home.get)
 app.post('/customer', customerValidation, CustomerController.add)
 app.get('/customers', CustomerController.getAll)
+app.get('/customer/:id', CustomerController.getOne)
 app.put('/customer/:id', CustomerController.updateOne)
 app.delete('/customer/:id', CustomerController.deleteOne)
 

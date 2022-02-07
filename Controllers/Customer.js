@@ -19,6 +19,16 @@ export default class CustomerController {
         }
     }
 
+    static async getOne(req, res) {
+        try {
+            const { id } = req.params;
+            const customer = await Customer.findOne({_id: id}).lean().exec();
+            res.send(customer)
+        } catch (err) {
+            res.status(500).send(err.message);
+        }
+    }
+
     static async updateOne(req, res) {
         try {
             const { id } = req.params;
