@@ -1,24 +1,24 @@
-GET http://localhost:3000/customers
+GET http://localhost:5000/customers
 ###
 
-GET http://localhost:3000/customer/61f815db6573b11162c9536f
+GET http://localhost:5000/customer/61f815db6573b11162c9536f
 
 ###
 
-POST http://localhost:3000/customer
+POST http://localhost:5000/customer
 Content-Type: application/json
 
 {
-    "id": 101,
-    "name": "Asad",
-    "phone": "01757110297",
-    "email": "test@gmil.com",
-    "address": "Jhikargachha, Jessore"
+    "id": 103,
+    "name": "Rohan",
+    "phone": "0175711413",
+    "email": "rohan@gmil.com",
+    "address": "Horidrapota, Jessore"
 }
 
 ###
 
-PUT http://localhost:3000/customer/101
+PUT http://localhost:5000/customer/101
 Content-Type: application/json
 
 {
@@ -27,4 +27,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/customer/101
+DELETE http://localhost:5000/customer/101

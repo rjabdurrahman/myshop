@@ -11,15 +11,15 @@ const validator = [
         .notEmpty().withMessage('Name is required!')
     ,
     check('phone')
-        .notEmpty().withMessage('ID is required!')
+        .notEmpty().withMessage('Phone is required!')
         .isMobilePhone().withMessage('Invalid Phone Number!')
     ,
     check('email')
-        .notEmpty().withMessage('ID is required!')
+        .notEmpty().withMessage('Email is required!')
         .isEmail().withMessage('Invalid email format!')
     ,
     check('address')
-        .notEmpty().withMessage('ID is required!')
+        .notEmpty().withMessage('Address is required!')
     ,
     checkFieldErr
 ]
